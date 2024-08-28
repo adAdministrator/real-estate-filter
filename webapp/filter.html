@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фильтр объектов</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Фильтр объектов</h2>
+    <form>
+        <label>Меня интересует:</label>
+        <input type="radio" name="interest" value="Аренда"> Аренда
+        <input type="radio" name="interest" value="Продажа"> 
+Продажа<br><br>
+
+        <label>Какой объект?</label>
+        <input type="radio" name="object" value="Дом"> Дом
+        <input type="radio" name="object" value="Квартира"> Квартира
+        <input type="radio" name="object" value="Коммерция"> 
+Коммерция<br><br>
+
+        <label>Какой район?</label>
+        <input type="text" name="district"><br><br>
+
+        <label>Ваш бюджет?</label>
+        <input type="text" name="budget_from" placeholder="От">
+        <input type="text" name="budget_to" placeholder="До"><br><br>
+
+        <button type="submit">Подтвердить выбор</button>
+    </form>
+</body>
+</html>
+
